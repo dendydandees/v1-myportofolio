@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.tooltipped')
   M.Tooltip.init(elems)
 
+  const date = new Date()
+  const hours = date.getHours()
+  const night = hours > 18 || hours < 6
+  const body = document.querySelector('body')
+
+  if (night) {
+    const classRemove = ['grey', 'darken-4', 'white-text']
+    const classAdd = ['white', 'black-text']
+
+    body.classList.remove(...classRemove)
+    body.classList.add(...classAdd)
+  }
+
   api.getGithubProfile()
   api.getGithubRepos()
 })
