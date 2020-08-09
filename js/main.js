@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const body = document.querySelector('body')
 
   if (night) {
-    const classRemove = ['grey', 'darken-4', 'white-text']
-    const classAdd = ['white', 'black-text']
+    const classRemove = ['white', 'black-text']
+    const classAdd = ['grey', 'darken-4', 'white-text'];
 
     body.classList.remove(...classRemove)
     body.classList.add(...classAdd)
