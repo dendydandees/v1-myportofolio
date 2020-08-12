@@ -6,16 +6,18 @@ const getGithubProfile = async () => {
   try {
     let response = await fetch(BASE_API)
     let data = await response.json()
+
     return template.profileTemplate(data)
   } catch(err) {
     console.log(err);
   }
 }
 
-const getGithubRepos = async () => {
+const getGithubRepos = async (page, per_page) => {
   try {
-    let response = await fetch(`${BASE_API}/repos?per_page=6`)
+    let response = await fetch(`${BASE_API}/repos?page=${page}&per_page=${per_page}`)
     let data = await response.json()
+
     return template.reposTemplate(data)
   } catch (err) {
     console.log(err);
