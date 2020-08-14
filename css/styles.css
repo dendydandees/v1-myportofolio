@@ -32,6 +32,10 @@ p {
   letter-spacing: 0.03em;
 }
 
+nav {
+  transition: all 0.3s ease-in;
+}
+
 nav .sidenav-trigger {
   margin: 0 1rem;
 }

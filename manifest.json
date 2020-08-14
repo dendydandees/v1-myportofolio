@@ -2,7 +2,20 @@
   "name": "Dendy Dharmawan Portofolio",
   "short_name": "Dendy Portofolio",
   "start_url": "/",
+  "theme_color": "#9c27b0",
+  "background_color": "#9c27b0",
+  "display": "standalone",
   "icons": [
+    {
+      "src": "./images/favicon_io/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/favicon_io/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
     {
       "src": "./images/favicon_io/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -12,9 +25,12 @@
       "src": "./images/favicon_io/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "./images/favicon_io/maskable_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "theme_color": "#9c27b0",
-  "background_color": "#9c27b0",
-  "display": "standalone"
+  ]
 }
