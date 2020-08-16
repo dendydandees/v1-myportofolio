@@ -22,7 +22,7 @@ const reposTemplate = (data) => {
   data.map(repo => {
     repos += `<div class="col s12 m6 l4">
     <div class="section">
-      <div class="card white small hoverable">
+      <div class="card transparent small hoverable">
         <div class="card-content">
           <h5>${repo.name}</h5>
           <p>
