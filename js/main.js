@@ -2,6 +2,10 @@ import api from './api.js';
 import pwa from './pwa.js';
 
 document.addEventListener('DOMContentLoaded', function () {
+  AOS.init({
+    easing: 'ease-in',
+    duration: 700,
+  });
   // Side Nav
   let sidenav = document.querySelectorAll('.sidenav');
   M.Sidenav.init(sidenav, { edge: 'right' });
