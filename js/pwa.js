@@ -6,7 +6,7 @@ const RegisterServiceWorker = () => {
       navigator.serviceWorker
         .register('/service-worker.js')
         .then(() => console.log('Service Worker Registered'))
-        .catch(() => console.log('Not Registered'))
+        .catch(() => console.log('Not Registered'));
     });
   } else {
     console.log('Service Worker Not Supported');
@@ -14,5 +14,5 @@ const RegisterServiceWorker = () => {
 };
 
 export default {
-  RegisterServiceWorker
-}
+  RegisterServiceWorker,
+};

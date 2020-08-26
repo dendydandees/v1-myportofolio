@@ -1,5 +1,5 @@
 const profileTemplate = (data) => {
-  let profile = ''
+  let profile = '';
 
   profile += `
     <div class="card purple hoverable">
@@ -12,14 +12,14 @@ const profileTemplate = (data) => {
         <p>${data.bio}</p>
       </div>
     </div>
-    `
+    `;
 
-  document.querySelector('.git-profile').innerHTML = profile
-}
+  document.querySelector('.git-profile').innerHTML = profile;
+};
 
 const reposTemplate = (data) => {
-  let repos = ''
-  data.map(repo => {
+  let repos = '';
+  data.map((repo) => {
     repos += `<div class="col s12 m6 l4">
     <div class="section">
       <div class="card transparent small hoverable">
@@ -48,12 +48,12 @@ const reposTemplate = (data) => {
     </div>
   </div>
   `;
-  })
+  });
 
-  document.querySelector('.git-repos').innerHTML = repos
-}
+  document.querySelector('.git-repos').innerHTML = repos;
+};
 
 export default {
   profileTemplate,
-  reposTemplate
-}
+  reposTemplate,
+};
